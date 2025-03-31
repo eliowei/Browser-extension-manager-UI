@@ -3,7 +3,7 @@
 [TW 中文](README.md)
 [🇬🇧 English](README-en.md)
 
-This is my solution to the [Browser Extension Manager UI Challenge](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp) on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building real-world projects.
+This is my solution to the [Browser Extension Manager UI Challenge](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp) on Frontend Mentor. Frontend Mentor challenges .
 
 ## Table of Contents
 
@@ -32,14 +32,14 @@ Users should be able to:
 
 ### Screenshots
 
-[Light](./assets/images/result-light.png)
-[Dark](./assets/images/result-dark.png)
+![Light](./assets/images/result-light.png)
+![Dark](./assets/images/result-dark.png)
 
 ### Links
 
-Solution URL: [Click here](https://your-solution-url.com)
+Solution URL: [Click here](https://github.com/eliowei/Browser-extension-manager-UI?tab=readme-ov-file)
 
-Live Demo: [Click here](https://your-live-site-url.com)
+Live Demo: [Click here](https://eliowei.github.io/Browser-extension-manager-UI/)
 
 ## Development Process
 

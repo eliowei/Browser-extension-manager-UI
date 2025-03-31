@@ -1,9 +1,10 @@
 # Frontend Mentor - 瀏覽器擴充功能管理 UI 解決方案
 
-[TW 中文](README.md)
-[🇬🇧 English](README-en.md)
+## [TW 中文](README.md)
 
-這是 Frontend Mentor 上[瀏覽器擴充功能管理 UI 挑戰 的解決方案](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp)。Frontend Mentor 的挑戰能幫助你透過構建真實的專案來提升程式設計技能。
+## [🇬🇧 English](README-en.md)
+
+這是 Frontend Mentor 上[瀏覽器擴充功能管理 UI 挑戰 的解決方案](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp)的挑戰
 
 ## 目錄
 
@@ -32,20 +33,20 @@
 
 ### 畫面截圖
 
-[亮色模式](./assets/images/result-light.png)
-[深色模式](./assets/images/result-dark.png)
+![亮色模式](./assets/images/result-light.png)
+![深色模式](./assets/images/result-dark.png)
 
 ### 相關連結
 
-解決方案網址：[點擊這裡](https://your-solution-url.com)
+解決方案網址：[點擊這裡](https://github.com/eliowei/Browser-extension-manager-UI?tab=readme-ov-file)
 
-線上預覽：[點擊這裡](https://your-live-site-url.com)
+線上預覽：[點擊這裡](https://eliowei.github.io/Browser-extension-manager-UI/)
 
 ## 開發過程
 
 ### 使用技術
 
-- Semantic HTML5 標記
+- Semantic HTML5
 
 - TailwindCSS
 
@@ -67,11 +68,9 @@
 
 ### 實用資源
 
-CSS Tricks - 幫助我學習 Flexbox 佈局
-
 MDN Web Docs - 獲取 HTML、CSS 和 JavaScript 的官方說明文件
 
-Frontend Mentor 官方討論區 - 查看其他開發者的解決方案，從中獲得靈感
+Frontend Mentor 官方討論區
 
 ## 特別感謝
 
