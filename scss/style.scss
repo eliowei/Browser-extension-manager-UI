@@ -1,0 +1,196 @@
+// 顏色變數
+$colors: (
+  primary: hsl(3, 71%, 56%),
+  primary-hover: hsl(3, 86%, 64%),
+  text-primary: hsl(227, 75%, 14%),
+  text-secondary: hsl(225, 23%, 24%),
+  background: hsl(200, 60%, 99%),
+  border: #dae1eb,
+  dark: (
+    bg: #1f2535,
+    text: #dfe4f2,
+    border: #40465a,
+    button-bg: #30354b,
+    button-text: #dfe4f2,
+    theme-btn: #30354b,
+    theme-btn-hover: #393f57,
+    slider: #30354b,
+  ),
+);
+
+// Mixins
+@mixin focus-visible {
+  outline: 2px solid hsl(3, 86%, 64%);
+  outline-offset: 1px;
+}
+
+@mixin dark-mode {
+  background: map-get($colors, dark, bg) !important;
+  color: map-get($colors, dark, text) !important;
+  border-color: map-get($colors, dark, border) !important;
+}
+// 基本樣式
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+// header
+.header__content {
+  background-color: hsl(200, 60%, 99%);
+  border-color: #dae1eb;
+}
+
+.theme__button {
+  &:focus-visible {
+    @include focus-visible;
+  }
+}
+
+// Card
+.card {
+  background-color: map-get($colors, background);
+  border-color: map-get($colors, border);
+
+  &__titile {
+    color: map-get($colors, text-primary);
+  }
+
+  &__text {
+    color: map-get($colors, text-secondary);
+  }
+
+  &__action {
+    button,
+    input {
+      border-color: hsl(0, 0%, 78%);
+      background-color: white;
+      color: map-get($colors, text-primary);
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    button:hover {
+      background-color: map-get($colors, primary);
+      border-color: map-get($colors, primary);
+      color: white;
+    }
+  }
+}
+
+// switch
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+
+  // 隱藏原先的checkbox
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    // 被勾選時改變背景顏色 + 移動小球
+    &:checked + .slider {
+      background-color: map-get($colors, primary) !important;
+
+      &::before {
+        transform: translateX(18px);
+      }
+    }
+  }
+
+  /* 開關的背景 */
+  .slider {
+    position: absolute;
+    inset: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: 0.3s;
+
+    // 小球
+    &::before {
+      content: "";
+      position: absolute;
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background: white;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+  }
+}
+
+// button
+.button__content {
+  color: hsl(227, 75%, 14%);
+
+  .active {
+    background-color: map-get($colors, primary) !important;
+    border-color: map-get($colors, primary) !important;
+    color: white;
+
+    &.dark-mode {
+      color: hsl(227, 75%, 14%) !important;
+    }
+  }
+
+  button {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: map-get($colors, background);
+    border-color: map-get($colors, border);
+  }
+}
+
+// dark mode
+.dark-mode {
+  @include dark-mode;
+
+  &__button.slider {
+    background: map-get($colors, dark, slider) !important;
+  }
+
+  &__text {
+    color: white;
+  }
+
+  &__header {
+    @include dark-mode;
+    border-color: map-get($colors, dark, bg);
+
+    > img {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  &__theme__button {
+    background: map-get($colors, dark, theme-btn);
+
+    &:hover {
+      background: map-get($colors, dark, theme-btn-hover);
+    }
+  }
+}
+
+// global focus
+*:focus-visible {
+  @include focus-visible;
+}
+
+// backgorund
+body {
+  background: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+}

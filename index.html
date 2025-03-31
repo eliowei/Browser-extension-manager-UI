@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header__content border-2 rounded-3xl flex justify-between p-4 mx-4 md:mx-40 my-8">
+        <img src="./assets/images/logo.svg" alt="logo">
+        <div
+          class="theme__button flex justify-center items-center border-gray-300 rounded w-[50px] h-[50px] rounded-xl bg-gray-200 hover:cursor-pointer hover:bg-gray-300"
+          tabindex="0">
+          <img src="./assets/images/icon-moon.svg" alt="icon-moon">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="flex flex-col md:flex-row items-center md:justify-between mb-8 mt-12 mx-4 md:mx-40 action__content">
+        <p class="text-3xl mb-4 sm:mb-4 md:mb-0 font-bold action__content__text">Extensions List</p>
+        <div class="button__content font-bold">
+          <button class="border-2 rounded-full py-2 px-4">All</button>
+          <button class="border-2 rounded-full py-2 px-4">Active</button>
+          <button class="border-2 rounded-full py-2 px-4">Inactive</button>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mx-4 md:mx-40 extension__list">
+      </section>
+    </main>
+  </div>
+
+  <div class="attribution my-2">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">ElioWei</a>.
+  </div>
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>
