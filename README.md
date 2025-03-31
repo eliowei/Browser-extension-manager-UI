@@ -1,8 +1,8 @@
 # Frontend Mentor - 瀏覽器擴充功能管理 UI 解決方案
 
-## [TW 中文](README.md)
+[TW 中文](README.md)
 
-## [🇬🇧 English](README-en.md)
+[🇬🇧 English](README-en.md)
 
 這是 Frontend Mentor 上[瀏覽器擴充功能管理 UI 挑戰 的解決方案](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp)的挑戰
 
