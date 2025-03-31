@@ -47,6 +47,7 @@ $colors: (
 .header__content {
   background-color: hsl(200, 60%, 99%);
   border-color: #dae1eb;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .theme__button {
@@ -59,6 +60,7 @@ $colors: (
 .card {
   background-color: map-get($colors, background);
   border-color: map-get($colors, border);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 
   &__titile {
     color: map-get($colors, text-primary);
@@ -152,6 +154,7 @@ $colors: (
     cursor: pointer;
     background-color: map-get($colors, background);
     border-color: map-get($colors, border);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
